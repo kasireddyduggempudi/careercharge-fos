@@ -2,6 +2,7 @@ import React from "react"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import careerChargeLogo from '../../resources/career-charge-logo.png';
 
 const Header = () => {
     return (
@@ -9,7 +10,10 @@ const Header = () => {
             {/* bg="dark" variant="dark" */}
             <Navbar collapseOnSelect expand="lg" fixed="top" style={{backgroundColor: 'white'}}>
             <Container>
-                <Navbar.Brand href="#home">CareerCharge</Navbar.Brand>
+                <Navbar.Brand href="#home">
+                    <img src={careerChargeLogo} width="30px" height={"25px"} style={{marginTop: "-5px"}}/> CareerCharge
+                    {/* https://images.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png */}
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">

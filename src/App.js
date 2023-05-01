@@ -5,6 +5,9 @@ import Header from './components/header/Header';
 import HomePage from './components/homepage/HomePage';
 import { Row, Container, Col } from 'react-bootstrap';
 import AboutUs from './components/aboutus/AboutUs';
+import CourseCard from './components/coursecard/CourseCard';
+import Courses from './components/courses/Courses';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -12,6 +15,8 @@ function App() {
       <Header />
       <HomePage />
       <AboutUs />
+      <Courses />
+      <Footer />
       {/* <Container style={{backgroundColor: 'blue'}}>
         <Row>
           <Col xs={{ span: 12, order: 2 }} md={{ span: 1, order: 1 }} style={{backgroundColor: 'red'}}> First col </Col>

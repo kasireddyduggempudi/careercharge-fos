@@ -45,8 +45,8 @@ const HomePage = () => {
                         </Button>
                     </Col>
                     {/* <Col></Col> */}
-                    <Col style={{maxWidth: '400px', marginLeft: '0px', justifyContent: 'center', marginLeft: 'auto', marginRight: 'auto'}} sm={{span: 12}}>
-                        <h4>&nbsp;&nbsp;&nbsp;Register for Career Counselling</h4><hr />
+                    <Col style={{maxWidth: '440px', marginLeft: '0px', justifyContent: 'center', marginLeft: 'auto', marginRight: 'auto'}} sm={{span: 12}}>
+                        <h4>&nbsp;&nbsp;&nbsp;Register for Free Career Counselling</h4><hr />
                         <Form className="pr-10" style={{border: "0px solid gray", padding: '10px', borderRadius: '5px', marginTop: '-20px'}}>
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Label>Name</Form.Label>
