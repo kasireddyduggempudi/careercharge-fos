@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const AboutUs = () => {
     return (
-        <>
+        <div id="about-us">
             <br /><br />
             <h3 style={{textAlign: 'center', textDecoration: 'underline'}}>About Us</h3>
             <Container className="justify-content-center align-items-center">
@@ -20,7 +20,7 @@ const AboutUs = () => {
                     </Col>
                 </Row>
             </Container>
-        </>
+        </div>
     );
 }
 

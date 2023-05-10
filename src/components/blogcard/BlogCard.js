@@ -1,12 +1,12 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-const CourseCard = (props) => {
-    const {title, description, logo, link} = props;
+const BlogCard = (props) => {
+    const {title, description, thumbnailUrl, blogId} = props;
     return (
         <>
             <Card style={{ width: '22rem' }}>
-                <Card.Img variant="top" src={logo} style={{height: '12rem', paddingTop: '10px'}}/>
+                <Card.Img variant="top" src={thumbnailUrl} style={{height: '12rem', paddingTop: '10px'}}/>
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>
@@ -19,4 +19,4 @@ const CourseCard = (props) => {
     )
 }
 
-export default CourseCard;
+export default BlogCard;

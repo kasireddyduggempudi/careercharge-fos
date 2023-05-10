@@ -47,7 +47,7 @@ const Courses = () => {
         },                        
     ]
     return (
-        <>
+        <div id='courses'>
             <br /><br />
             <h3 style={{textAlign: 'center', textDecoration: 'underline'}}>Courses Offering</h3>
             <br />
@@ -65,7 +65,7 @@ const Courses = () => {
                     })}
                 </Row>
             </Container>
-        </>
+        </div>
     )
 }
 
