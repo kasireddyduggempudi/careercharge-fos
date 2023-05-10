@@ -11,6 +11,9 @@ import Courses from './components/courses/Courses';
 import Footer from './components/footer/Footer';
 import NotFoundView from './views/404';
 import ListBlogsView from './views/blog/ListBlogsView';
+import Testing from './views/testing';
+import Blog from './views/blog/Blog';
+import CreateBlog from './views/admin/CreateBlog';
 
 function App() {
   return (
@@ -25,7 +28,10 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePageView />}></Route>
         <Route path='/about' element={<AboutUs />}></Route>
-        <Route path='/blog' element={<ListBlogsView />}></Route>
+        <Route path='/blogs' element={<ListBlogsView />}></Route>
+        <Route path='/admin/blogs/create' element={<CreateBlog />}></Route>
+        <Route path='/blogs/:blogId' element={<Blog />}></Route>
+        <Route path='/testing' element={<Testing />}></Route>
         <Route path='*' element={<NotFoundView />}></Route>
       </Routes>
     </BrowserRouter>
