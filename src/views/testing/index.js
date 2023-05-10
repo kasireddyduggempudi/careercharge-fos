@@ -17,6 +17,7 @@ function Testing() {
                 creationTimeMillis={new Date().getTime()}
             /> */}
             <TinyMCEEditor 
+                content="<p>testing</p>"
                 handleCallback={handleCallback}
             />
         </div>
