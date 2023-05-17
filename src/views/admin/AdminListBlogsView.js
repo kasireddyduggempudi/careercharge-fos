@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import BlogCard from "../../components/blogcard/BlogCard";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import { Row, Container, Col } from 'react-bootstrap';
 import RestClient from "../../services/RestClient";
+import AdminBlogCard from "../../components/blogcard/AdminBlogCard";
 
-function ListBlogsView() {
+function AdminListBlogsView() {
 
     const [blogs, setBlogs] = useState([]);
 
@@ -74,7 +74,7 @@ function ListBlogsView() {
                     <Row style={{gap: "20px"}} className="justify-content-center">
                         {blogs.map(blog => {
                             return (
-                                <BlogCard 
+                                <AdminBlogCard 
                                     title={blog.title}
                                     description={blog.description}
                                     thumbnailUrl={blog.thumbnailUrl}
@@ -92,4 +92,4 @@ function ListBlogsView() {
     )
 }
 
-export default ListBlogsView;
+export default AdminListBlogsView;

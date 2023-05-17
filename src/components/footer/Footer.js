@@ -4,7 +4,7 @@ const Footer = () => {
             <div className="col-xl-12 col-lg-12 text-center">
                 <p>
                     Copyright © 2023, All Right Reserved&nbsp;&nbsp;| &nbsp;&nbsp;
-                    <a href="#" style={{textDecoration: "none", color: "white"}}>CareerCharge</a>
+                    <a href="/" style={{textDecoration: "none", color: "white"}}>CareerCharge</a>
                 </p>
             </div>
         </div>

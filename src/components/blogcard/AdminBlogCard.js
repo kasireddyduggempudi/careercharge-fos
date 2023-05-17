@@ -7,12 +7,16 @@ const handleRead = (blogId) => {
     return window.location.href=`/blogs/${blogId}`;
 }
 
-const BlogCard = (props) => {
+const handleEdit = (blogId) => {
+    return window.location.href = `/admin/blogs/${blogId}/edit`
+}
+
+const AdminBlogCard = (props) => {
     const {title, description,author, thumbnailUrl,creationTimeMillis, blogId} = props;
     return (
         <>
-            <Card style={{ width: '22rem', cursor:"pointer",padding: "0px" }} onClick={() => handleRead(blogId)}>
-                <Card.Img variant="top" src={thumbnailUrl} style={{height: '12rem', paddingTop: '0px'}}/>
+            <Card style={{ width: '22rem', padding: "0px" }}>
+                <Card.Img variant="top" src={thumbnailUrl} style={{height: '12rem', cursor:"pointer", paddingTop: '0px'}} onClick={() => handleRead(blogId)} />
                 <div style={{position: "absolute", top: "0", width: "100%"}}>
                     <div style={{display: "flex", justifyContent: "space-between", paddingLeft: "1rem", paddingRight: '1rem', paddingBottom: '0px'}}>
                         <div>
@@ -28,11 +32,14 @@ const BlogCard = (props) => {
                     <Card.Text className={"text-ellipsis-2-lines"}>
                         {description}
                     </Card.Text>
-                    <Button variant="secondary">{"Read >>"}</Button>
-                </Card.Body>
+                    <div style={{display: "flex", justifyContent: "space-between"}}>
+                        <Button variant="secondary" onClick={() => handleRead(blogId)}>{"Read >>"}</Button>
+                        <Button variant="secondary" onClick={() => handleEdit(blogId)}>{"Edit >>"}</Button>
+                    </div>
+                </Card.Body> 
             </Card>
         </>
     )
 }
 
-export default BlogCard;
+export default AdminBlogCard;

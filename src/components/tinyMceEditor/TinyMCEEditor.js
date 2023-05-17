@@ -4,6 +4,10 @@ import { Editor } from "@tinymce/tinymce-react";
 const TinyMCEEditor = (props) => {
   const [content, setContent] = useState(props.content || "");
 
+  useEffect(() => {
+    setContent(props.content);
+  }, [props.content])
+
   const handleEditorChange = (data) => {
     setContent(data);
     props.handleCallback(data);

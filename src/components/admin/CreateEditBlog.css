@@ -1,0 +1,14 @@
+.createEditBlogDiv {
+    padding: 20px;
+}
+
+@media (min-width: 840px) {
+    .createEditBlogDiv {
+        max-width: 840px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* border: 1px solid black; */
+        padding: 10px;
+    }
+}
