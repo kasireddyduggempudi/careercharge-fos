@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <>
             {/* bg="dark" variant="dark" */}
-            <Navbar collapseOnSelect expand="lg" fixed="top" style={{backgroundColor: 'white'}}>
+            <Navbar collapseOnSelect expand="lg" fixed="top" style={{backgroundColor: 'white', borderBottom: '1px solid lightgray'}}>
             <Container>
                 <Navbar.Brand href="/">
                     <img src={careerChargeLogo} width="30px" height={"25px"} style={{marginTop: "-5px"}}/> CareerCharge
@@ -17,13 +17,13 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                    <Nav.Link href="#courses">Courses</Nav.Link>
-                    <Nav.Link href="/">Community</Nav.Link>
-                    <Nav.Link href="#about-us">About Us</Nav.Link>
+                    <Nav.Link href="/courses">Courses</Nav.Link>
+                    {/* <Nav.Link href="/">Community</Nav.Link> */}
+                    <Nav.Link href="/about-us">About Us</Nav.Link>
                 </Nav>
                 <Nav>
                     <Nav.Link href="/blogs">Blog</Nav.Link>
-                    <Nav.Link eventKey={2} href="#memes">
+                    <Nav.Link eventKey={2} href="/contact-us">
                     Contact
                     </Nav.Link>
                 </Nav>

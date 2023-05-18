@@ -68,10 +68,10 @@ function ListBlogsView() {
     return (
         <>
             <Header />
-            <div style={{marginTop: "80px"}}>
-                <h6 style={{"textAlign": "center", "textDecoration": "underline", "marginBottom": "20px"}}>CareerCharge / Blogs</h6>
-                <Container >
-                    <Row style={{gap: "20px"}} className="justify-content-center">
+            <div style={{marginTop: "80px", display: "block", maxWidth: '1100px', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center'}}>
+                <h3 style={{"textAlign": "center", "textDecoration": "underline", "marginBottom": "40px"}}>CareerCharge - Blogs</h3>
+                <Container>
+                    <Row style={{gap: "20px"}} className="justify-content-centere">
                         {blogs.map(blog => {
                             return (
                                 <BlogCard 
