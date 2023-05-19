@@ -68,7 +68,7 @@ function ListBlogsView() {
     return (
         <>
             <Header />
-            <div style={{marginTop: "80px", display: "block", maxWidth: '1100px', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center'}}>
+            <div style={{marginTop: "80px", display: "block", maxWidth: '1100px', marginLeft: 'auto', marginRight: 'auto'}}>
                 <h3 style={{"textAlign": "center", "textDecoration": "underline", "marginBottom": "40px"}}>CareerCharge - Blogs</h3>
                 <Container>
                     <Row style={{gap: "20px"}} className="justify-content-centere">

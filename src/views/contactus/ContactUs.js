@@ -23,7 +23,7 @@ function ContactUs() {
             if(response.status === 200) {
                 console.log(response);
                 setContactUsQuery({});
-                setApiMessage("Great!! Our expert will contact you soon!!");
+                setApiMessage("Thanks for reaching out to us. We will get back to you soon...");
             }
         })
         .catch(err => {
@@ -43,7 +43,7 @@ function ContactUs() {
                     <div className="contactUsInfo">
                         <h1>We'd Love to Hear From You</h1>
                         <p>Whether you're curious about our courses or programs,<br /> 
-                        we are ready to answer any and all your questions. <br />React out to us on <b>admin@careercharge.in</b></p>
+                        we are ready to answer any and all your questions. <br />Reach out to us on <b>admin@careercharge.in</b></p>
                         {/* <p>Cursion about our courses or programs, react out to us on <b>admin@careercharge.in</b></p> */}
                     </div><br />
                     <div className="contactFormDiv">
