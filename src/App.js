@@ -25,7 +25,7 @@ function App() {
     <HashRouter> {/* this is for github*/}
       <Routes>
         <Route path='/careercharge-fos' element={<HomePageView />}></Route>
-        <Route path='/careercharge-fos/about-us' element={<AboutUsView />}></Route>
+        <Route path='/about-us' element={<AboutUsView />}></Route>
         <Route path='/blogs' element={<ListBlogsView />}></Route>
         <Route path='/courses' element={<CoursesView />}></Route>
         <Route path='/contact-us' element={<ContactUs />}></Route>
