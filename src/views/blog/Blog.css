@@ -1,0 +1,35 @@
+.blogContainer {
+    padding: 20px;
+}
+.blogTitle {
+    font-size: "28px";
+    font-weight: 500;
+    line-height: 1.41;
+    opacity: 0.9
+}
+.authorDateDiv {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 720px) {
+    .blogContainer {
+        max-width: 720px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* border: 1px solid black; */
+        padding: 10px;
+    }
+}
+
+/** 
+setting image width and height as per the screen width
+*/
+.blogContent img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}

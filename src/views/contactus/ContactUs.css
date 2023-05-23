@@ -1,0 +1,40 @@
+.contactUsBody {
+    margin-top: 80px;
+}
+
+.contactUsContainer {
+    padding: 20px;
+}
+
+@media (min-width: 820px) {
+    .contactUsContainer {
+        margin-top: 60px;
+        max-width: 820px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* text-align: center; */
+    }
+}
+
+.contactUsInfo {
+    text-align: center;
+}
+
+.contactFormDiv {
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactFormDiv *:focus{
+    outline: 0;
+    outline: none;
+}
+
+.contactFormDiv *:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: lightgray;
+}
