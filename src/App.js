@@ -23,7 +23,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<HomePageView />}></Route>
+        <Route path='/careercharge-fos' element={<HomePageView />}></Route>
         <Route path='/about-us' element={<AboutUsView />}></Route>
         <Route path='/blogs' element={<ListBlogsView />}></Route>
         <Route path='/courses' element={<CoursesView />}></Route>
