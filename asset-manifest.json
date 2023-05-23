@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5cc49406.css",
+    "main.js": "/static/js/main.b0dac34c.js",
+    "static/js/787.3504ea41.chunk.js": "/static/js/787.3504ea41.chunk.js",
+    "static/media/aws-cloud.jpeg": "/static/media/aws-cloud.39559ad1292a30399bf7.jpeg",
+    "static/media/career-charge-logo.png": "/static/media/career-charge-logo.d74a580636bde870149c.png",
+    "static/media/python-logo.png": "/static/media/python-logo.57d47107ae449a8fcf2d.png",
+    "static/media/sql.png": "/static/media/sql.360d915a8fecbe3e0e47.png",
+    "static/media/java-react.webp": "/static/media/java-react.da4222e8b2d581c22876.webp",
+    "static/media/mern-stack.jpeg": "/static/media/mern-stack.876846db3e8118eb809c.jpeg",
+    "static/media/django-react.webp": "/static/media/django-react.5e9e901f171a025b1b9c.webp",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.5cc49406.css.map": "/static/css/main.5cc49406.css.map",
+    "main.b0dac34c.js.map": "/static/js/main.b0dac34c.js.map",
+    "787.3504ea41.chunk.js.map": "/static/js/787.3504ea41.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cc49406.css",
+    "static/js/main.b0dac34c.js"
+  ]
+}
