@@ -21,13 +21,6 @@ import AboutUsView from './views/aboutus/AboutUsView';
 
 function App() {
   return (
-    // <div>
-    //   <Header />
-    //   <HomePage />
-    //   <AboutUs />
-    //   <Courses />
-    //   <Footer />
-    // </div>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePageView />}></Route>
