@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header/Header';
 import HomePage from './components/homepage/HomePage';
 import { Row, Container, Col } from 'react-bootstrap';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import AboutUs from './components/aboutus/AboutUs';
 import Courses from './components/courses/Courses';
 import Footer from './components/footer/Footer';
@@ -21,10 +21,11 @@ import AboutUsView from './views/aboutus/AboutUsView';
 
 function App() {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <HashRouter> {/* this is for github*/}
       <Routes>
         <Route path='/careercharge-fos' element={<HomePageView />}></Route>
-        <Route path='/about-us' element={<AboutUsView />}></Route>
+        <Route path='/careercharge-fos/about-us' element={<AboutUsView />}></Route>
         <Route path='/blogs' element={<ListBlogsView />}></Route>
         <Route path='/courses' element={<CoursesView />}></Route>
         <Route path='/contact-us' element={<ContactUs />}></Route>
@@ -35,7 +36,8 @@ function App() {
         <Route path='/testing' element={<Testing />}></Route>
         <Route path='*' element={<NotFoundView />}></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
+    // </BrowserRouter>
   );
 }
 
